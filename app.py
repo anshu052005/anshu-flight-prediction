@@ -115,9 +115,7 @@ def main():
         except Exception as e:
             st.error(f"❌ An error occurred: {str(e)}")
     
-    # Footer
-    st.markdown("---")
-    st.markdown("<p style='text-align: center; color: #888;'>Made with ❤️ using Streamlit</p>", unsafe_allow_html=True)
+   
 
 if __name__ == "__main__":
     main()
