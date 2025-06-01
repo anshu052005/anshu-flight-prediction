@@ -9,9 +9,9 @@ import os
 def load_artifacts():
     try:
         # Try to load from current directory first
-        model = joblib.load('flight_fare_model.joblib')
-        scaler = joblib.load('scaler.joblib')
-        label_encoders = joblib.load('label_encoders.joblib')
+        model = joblib.load('flight_fare_model_compressed (1).joblib')
+        scaler = joblib.load('scaler (1).joblib')
+        label_encoders = joblib.load('label_encoders (1).joblib')
         return model, scaler, label_encoders
     except FileNotFoundError:
         st.error("Model files not found. Please ensure all .joblib files are uploaded.")
